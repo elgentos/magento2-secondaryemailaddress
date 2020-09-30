@@ -56,7 +56,7 @@ class ConfigProvider
      */
     public function getCustomerAccountShareScope()
     {
-        return (int)$this->scopeConfig->getValue(self::XML_PATH_CUSTOMER_ACCOUNT_SHARE_SCOPE, ScopeInterface::SCOPE_STORE);
+        return (int)$this->scopeConfig->getValue(self::XML_PATH_CUSTOMER_ACCOUNT_SHARE_SCOPE);
     }
 
     /**
@@ -66,7 +66,7 @@ class ConfigProvider
      */
     public function getLoginAttribute()
     {
-        $attribute = (string)$this->scopeConfig->getValue(self::XML_PATH_ADVANCEDLOGIN_LOGIN_ATTRIBUTE, ScopeInterface::SCOPE_STORE);
+        $attribute = (string)$this->scopeConfig->getValue(self::XML_PATH_ADVANCEDLOGIN_LOGIN_ATTRIBUTE);
         $attribute = trim($attribute);
         if ($attribute == '') {
             return false;
@@ -82,6 +82,6 @@ class ConfigProvider
      */
     public function getLoginAttributeLabel()
     {
-        return (string)$this->scopeConfig->getValue(self::XML_PATH_ADVANCEDLOGIN_LOGIN_ATTRIBUTE_LABEL, ScopeInterface::SCOPE_STORE);
+        return (string)$this->scopeConfig->getValue(self::XML_PATH_ADVANCEDLOGIN_LOGIN_ATTRIBUTE_LABEL);
     }
 }

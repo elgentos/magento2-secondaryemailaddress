@@ -1,4 +1,8 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
     <preference for="Magento\Customer\Api\AccountManagementInterface" type="Elgentos\SecondaryEmailAddress\Model\AccountManagement" />
+    <type name="Magento\Sales\Model\Order\Email\Container\Container">
+        <plugin sortOrder="1" name="elgentosSecondaryEmailAddressContainer"
+                type="Elgentos\SecondaryEmailAddress\Plugin\Model\Order\Email\Container\ContainerPlugin"/>
+    </type>
 </config>
