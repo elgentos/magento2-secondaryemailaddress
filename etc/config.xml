@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <customer>
+            <secondaryemailaddress>
+                <login_mode>2</login_mode>
+                <login_attribute>secondary_email</login_attribute>
+                <login_attribute_label><![CDATA[Secondary Email]]></login_attribute_label>
+            </secondaryemailaddress>
+        </customer>
+    </default>
+</config>

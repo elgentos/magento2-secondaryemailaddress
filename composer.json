@@ -1,0 +1,22 @@
+{
+    "name": "elgentos/module-secondaryemailaddress",
+    "description": "Allows customers to enter a secondary email address to login with",
+    "type": "magento2-module",
+    "license": "OSL-3.0",
+    "authors": [
+        {
+            "email": "peterjaap@elgentos.nl",
+            "name": "Peter Jaap Blaakmeer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "files": [
+          "registration.php"
+        ],
+        "psr-4": {
+            "Elgentos\\SecondaryEmailAddress\\": ""
+        }
+    }
+}
