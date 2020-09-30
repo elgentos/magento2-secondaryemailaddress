@@ -1,5 +1,5 @@
 {
-    "name": "elgentos/module-secondaryemailaddress",
+    "name": "elgentos/magento2-secondaryemailaddress",
     "description": "Allows customers to enter a secondary email address to login with",
     "type": "magento2-module",
     "license": "OSL-3.0",
